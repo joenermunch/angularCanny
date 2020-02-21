@@ -1,0 +1,29 @@
+.head-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.head {
+  width: 400px;
+}
+
+.eye {
+  width: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hair {
+  width: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
