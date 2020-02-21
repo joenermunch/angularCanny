@@ -5,14 +5,14 @@
   <div class="test">
 
     <div class="head-container">
-      <img class="head" src="{{resultImages.head.default}}">
+      <img class="head" src="{{images.head.default}}">
 
       <div class="eyes-container">
-        <img class="eye" src="{{resultImages.eyes[1]}}">
+        <img class="eye" src="{{images.eyes[1]}}">
       </div>
 
       <div class="hair-container">
-        <img class="eye" src="{{resultImages.hair[1]}}">
+        <img class="eye" src="{{images.hair[2]}}">
       </div>
 
     </div>
@@ -23,19 +23,7 @@
 
   <div class="choices-row">
 
-    <div class="nav">
-      <ul>
-        <li>
-          Hair
-        </li>
-        <li>
-          Eyes
-        </li>
-        <li>
-          Mouth
-        </li>
-      </ul>
-    </div>
+    <app-choices-menu [images]="images"></app-choices-menu>
 
     <div class="options">
       <!-- Hair, Eyes, Mouth Options -->

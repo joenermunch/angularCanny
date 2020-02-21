@@ -1,0 +1,64 @@
+nav {
+  width: 100%;
+  min-height: fit-content;
+  margin: 0 auto;
+
+  ul {
+    list-style: none;
+    display: flex;
+
+    background-color: #eee;
+    overflow: scroll;
+
+
+
+  }
+
+  li {
+    width: fit-content;
+    background-color: #eee;
+
+    border-right: 1px solid lightgray;
+    padding: 15px;
+    font-size: 14px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($color: #eee, $amount: 5);
+    }
+
+  }
+
+}
+
+
+.options {
+  min-height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.options-container {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+  margin-bottom: 15px;
+}
+
+.option {
+  width: 100px;
+  height: 100px;
+  position: relative;
+
+}
+
+.option-image {
+  width: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}

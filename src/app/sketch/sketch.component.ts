@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 import images from "../../assets/images";
 
 @Component({
@@ -7,7 +7,7 @@ import images from "../../assets/images";
   styleUrls: ["./sketch.component.scss"]
 })
 export class SketchComponent implements OnInit {
-  public resultImages = {
+  public images = {
     head: {
       default: images.result.head.default
     },
@@ -18,10 +18,7 @@ export class SketchComponent implements OnInit {
       1: images.result.hair[1]
     }
   };
-
-  constructor() {
-    console.log(this.resultImages.head.default);
-  }
+  constructor() {}
 
   ngOnInit(): void {}
 }
